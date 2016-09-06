@@ -18,8 +18,11 @@ function helloWorld (input)
 }
 
 //Prompt user for input and store variable
-userInput = prompt("Type Hello!")
+do
+{
+  userInput = prompt("Type Hello!")
+  //Call function
+  //Alert user results
+  alert(helloWorld(userInput))
+}while(userInput.toLowerCase() != 'hello')
 
-//Call function
-//Alert user results
-alert(helloWorld(userInput))
